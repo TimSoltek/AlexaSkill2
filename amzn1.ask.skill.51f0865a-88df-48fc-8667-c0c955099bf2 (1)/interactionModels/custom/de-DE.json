@@ -1,0 +1,103 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "multimodales tic tac toe",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hallo",
+            "wie geht\u0027s dir",
+            "sag hallo welt",
+            "sag hallo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "OpponentIntent",
+          "slots": [
+            {
+              "name": "Opponent",
+              "type": "Opponent"
+            }
+          ],
+          "samples": [
+            "gegen einen {Opponent}",
+            "gegen den {Opponent}",
+            "{Opponent}"
+          ]
+        },
+        {
+          "name": "PlaceMoveIntent",
+          "slots": [
+            {
+              "name": "Tile",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{Tile}",
+            "Ich wähle Feld {Tile} ",
+            "Feld {Tile}",
+            "Ich möchte meinen Zug auf Feld {Tile} platzieren",
+            "Setze den Zug auf Feld {Tile}",
+            "ich setze auf Feld {Tile}",
+            "platziere den zug auf Feld {Tile}"
+          ]
+        },
+        {
+          "name": "GameInfoIntent",
+          "slots": [],
+          "samples": [
+            "Ich weiß nicht mehr wie das Spielfeld aussieht",
+            "Ich habe vergessen welche Felder schon belegt sind",
+            "sag mir wie das Spielfeld im Moment aussieht",
+            "Kannst du mir bitte sagen wie das Spielfeld aussieht",
+            "Wie sieht das Spielfeld aus"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Freund",
+                "synonyms": [
+                  "Mensch"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Computer"
+              }
+            }
+          ],
+          "name": "Opponent"
+        }
+      ]
+    }
+  },
+  "version": "11"
+}
